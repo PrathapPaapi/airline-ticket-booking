@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+        crossorigin="anonymous">
+    <title>Flight details</title>
+    <style>
+        body {
+            background-color: azure;
+        }
+
+        .main-row {
+            border: solid 1px rgb(193, 179, 179);
+            border-radius: 6px;
+        }
+
+        .layover-content {
+            border-top: solid 1px rgb(193, 179, 179);
+            border-bottom: solid 1px rgb(193, 179, 179);
+        }
+
+        @media only screen and (max-width: 530px) {
+
+            .flight-details {
+                overflow-x: auto;
+            }
+
+            .main-contents {
+                width: 530px;
+                overflow-x: auto;
+            }
+
+            .container {
+                width: 530px;
+                overflow-x: auto;
+            }
+        }
+
+        @media only screen and (max-width: 460px) {
+            .vistara-airlines-heading {
+                display: none;
+            }
+
+            .airline-logo {
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color: rgb(153, 194, 194); width: 100%;">
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html"><img src="images/logoipsum-243.svg" width="150" alt="company-logo"></a>
+            <div class="btn btn-outline-primary fw-bold">Login</div>
+        </div>
+    </div>
+
+    <div class="mt-5" >
+        <div class="d-flex align-items-center justify-content-between">
+            <h4 class="ps-3 vistara-airlines-heading">VISTARA AIRLINES</h4>
+            <img src="images/vistara.jpg" class="airline-logo" style="width: 250px;" alt="airline-logo"> 
+        </div>
+    </div>
+    
+    <div>
+        <h4 class="ps-3 flight-details-heading" style="background-color: rgb(180, 221, 221);">Flight Details</h4>
+
+        <h5 class="ps-3"><img src="images/flight_takeoff_FILL0_wght400_GRAD0_opsz48.png">Bangalore - Leh</h5>
+
+        <div class="flight-details">
+            <div class="flight-details-content">
+                <div type="button" data-bs-toggle="collapse" data-bs-target="#out-bound" aria-expanded="false" aria-controls="out-bound">
+                    <div class="container text-center mt-3 main-row">
+                        <div class="row">
+                          <div class="col">23:20 - 09:30 (+1)</div>
+                          <div class="col">10hrs 10min (1 stop) </div>
+                          <div class="col">173kg CO2</div>
+                          <div class="col">
+                            <p style="font-weight: 700;">Rs. 22,517</p>
+                            <p style="font-size: 10px; margin-top: -20px;" >(round trip)</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="out-bound">
+                    <div class="main-contents"> 
+                        <div>
+                            <div class=" container text-center mt-3">
+                                <div class="row justify-content-center" style="height: 50px;">
+                                    <div class="col-2">23:20</div>
+                                    <div class="col-9">Kempegowda International Airport Bengaluru (BLR)</div>
+                                </div>
+                                <div class="row justify-content-center" style="height: 50px;">
+                                    <div class="col-2">02:10</div>
+                                    <div class="col-9">Indira Gandhi International Airport (DEL)</div>
+                                </div>
+                            </div>
+
+                            <div class="container text-center layover-content">
+                                <div class="row justify-content-center mt-4" style="height: 50px;">
+                                    <div class="col-9 d-flex"><p class="mb-4 me-2">7hrs 45min Layover in Delhi (DEL)</p><p style="color: red; font-size: 15px;">Overnight layover</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="container text-center mt-3">
+                                <div class="row justify-content-center" style="height: 50px;">
+                                    <div class="col-2">09:55</div>
+                                    <div class="col-9">Indira Gandhi International Airport (DEL)</div>
+                                </div>
+    
+                                <div class="row justify-content-center" style="height: 50px;">
+                                    <div class="col-2">11:20</div>
+                                    <div class="col-9">Kushok Bakula Rimpochee Airport (IXL)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+        <h5 class="ps-3 pt-3"><img src="images/flight_takeoff_FILL0_wght400_GRAD0_opsz48.png">Leh - Bangalore</h5>
+
+        <div class="flight-details">
+            <div type="button" data-bs-toggle="collapse" data-bs-target="#in-bound" aria-expanded="false" aria-controls="in-bound">
+                <div class="container text-center mt-3 main-row">
+                    <div class="row">
+                      <div class="col">13:10 - 00:35 (+1)</div>
+                      <div class="col">11hrs 25min (1 stop) </div>
+                      <div class="col">173kg CO2</div>
+                      <div class="col">
+                        <p style="font-weight: 700;">Rs. 22,517</p>
+                        <p style="font-size: 10px; margin-top: -20px;" >(round trip)</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="in-bound">
+                <div class="main-contents"> 
+                    <div>
+                        <div class="container text-center mt-3">
+                            <div class="row justify-content-center" style="height: 50px;">
+                                <div class="col-2">13:10</div>
+                                <div class="col-9">Kushok Bakula Rimpochee Airport (IXL)</div>
+                            </div>
+
+                            <div class="row justify-content-center" style="height: 50px;">
+                                <div class="col-2">14:35</div>
+                                <div class="col-9">Indira Gandhi International Airport (DEL)</div>
+                            </div>
+                        </div>
+
+                        <div class="container text-center layover-content">
+                            <div class="row justify-content-center mt-4" style="height: 50px;">
+                                <div class="col-9 d-flex"><p class="mb-4 me-2">7hrs 10min Layover in Delhi (DEL)</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="container text-center mt-3">
+                            <div class="row justify-content-center" style="height: 50px;">
+                                <div class="col-2">21:45</div>
+                                <div class="col-9">Indira Gandhi International Airport (DEL)</div>
+                            </div>
+
+                            <div class="row justify-content-center" style="height: 50px;">
+                                <div class="col-2">00:35</div>
+                                <div class="col-9">Kempegowda International Airport Bengaluru (BLR)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>    
+
+        
+    <div><a href="search_details.html" class="btn btn-outline-secondary fw-bold me-4 mt-3 mb-4" style="float: right;">Back</a></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+<!-- <div class="d-flex justify-content-around price-info-content">
+    <div>
+        <table class="mt-3 table table-light table-striped-columns" style="font-size: 15px; width: 300px; height: 250px;">
+            <tr>
+                <td colspan="2" style="font-weight: bold; background-color: rgb(156, 237, 210);">Price Summary</td>
+            </tr>
+            <tr>
+                <td>Adult * 1</td>
+                <td>Rs. 5216</td>
+            </tr>
+            <tr>
+                <td>Total Taxes</td>
+                <td>Rs. 1130</td>
+            </tr>
+            <tr>
+                <td>Convinience Fee</td>
+                <td>Rs. 300</td>
+            </tr>
+            <tr >
+                <td style="color: red; font-weight: bold;">Grand Total</td>
+                <td style="color: red; font-weight: bold;">Rs. 6046</td>
+            </tr>
+        </table>
+    </div>
+    <div class="card mt-3 ms-3" style=" width: 500px; height: 250px;">
+        <h5 class="card-header" style="background-color: rgb(166, 239, 199);">Additional Information</h5>
+        <div class="card-body">
+          <ol style="font-size: 13px;">
+            <li>Airline Cancellation Fee is Rs 3710 per passenger for your selected flight on the sector Bangalore to Leh</li>
+            <li>Certify your health status through the Aarogya Setu app or the self-declaration form at the airport</li>
+            <li>Remember to web check-in before arriving at the airport</li>
+            <li>All passengers travelling to Ladakh (Leh) must carry a negative RT-PCR test report done within 72hrs by an ICMR authorized laboratory.</li>
+          </ol>
+        </div>
+    </div>    
+</div>   -->
