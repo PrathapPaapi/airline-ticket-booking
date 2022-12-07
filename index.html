@@ -9,17 +9,29 @@
         crossorigin="anonymous">
     <title>Airline Booking</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(images/colin-lloyd-c9imJaBgiU0-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-position: center center;
+        }
+
         .header {
             background: linear-gradient(180deg, rgba(197,247,247,1) 0%, rgba(20,35,40,255) 85%);
         }
 
-        .main-box {
+        .container {
             background-color: lightgray;
-        }
-
-        .bg-image {
-            width: 100%;
-            height: 770px;
+            border-radius: 6px;
+            width: 250px;
+            height: 300px;
+            margin-top: 150px;
         }
     </style>
 </head>
@@ -31,53 +43,45 @@
             <div class="btn btn-outline-light fw-bold">Login</div>
         </div>
     </div>
-    <div class="position-relative">
-        <img src="images/colin-lloyd-c9imJaBgiU0-unsplash.jpg" alt="background-image" class="d-block bg-image" >
-        <div class=" d-block position-absolute start-50 top-50 translate-middle">
-            <div class="rounded p-3 main-box" style="margin-bottom: 40%;">
-                <div class="d-block align-items-center">
-                    <div class="mb-2">
-                        <label for="source-DataList" class="form-label fw-bold fs-6">Where from?</label>
-                        <input class="form-control" list="datalistoptions" id="source-DataList" placeholder="Enter your Source">
-                        <datalist id="datalistoptions">
-                            <option value="Bangalore">
-                            <option value="Delhi">
-                            <option value="Mumbai">
-                            <option value="Hyderabad">
-                            <option value="Kolkata">
-                            <option value="Chennai">
-                            <option value="Goa">
-                            <option value="Ahmedabad">
-                            <option value="Kochi">
-                            <option value="Leh">
-                        
-                        </datalist>
-                    </div>
-                    <div class="mb-2">
-                        <label for="destination-DataList" class="form-label fw-bold fs-6">Where to?</label>
-                        <input class="form-control" list="datalistoptions" id="destination-DataList" placeholder="Enter your Destination">
-                        <datalist id="datalistoptions">
-                            <option value="Bangalore">
-                            <option value="Delhi">
-                            <option value="Mumbai">
-                            <option value="Hyderabad">
-                            <option value="Kolkata">
-                            <option value="Chennai">
-                            <option value="Goa">
-                            <option value="Ahmedabad">
-                            <option value="Kochi">
-                            <option value="Leh">
-                        
-                        </datalist>
-                    </div>
-                    <div class="mb-2">
-                        <label for="" class="fw-bold fs-6 mb-2">Departure Date</label>
-                        <input type="date" class="form-control">
-                    </div>
-                    <div><a href="search_details.html" class="btn btn-dark fw-bold btn-md ms-5">Search Flights</a></div>
-
-                </div>
+    <div class="container">   
+        <div class="p-3 main-box">
+            <div class="mb-2">
+                <label for="source-DataList" class="form-label fw-bold fs-6">Where from?</label>
+                <input class="form-control" list="source-options" id="source-DataList" placeholder="Enter your Source">
+                <datalist id="source-options">
+                    <option value="Bangalore">
+                    <option value="Delhi">
+                    <option value="Mumbai">
+                    <option value="Hyderabad">
+                    <option value="Kolkata">
+                    <option value="Chennai">
+                    <option value="Goa">
+                    <option value="Ahmedabad">
+                    <option value="Kochi">
+                    <option value="Leh">
+                </datalist>
             </div>
+            <div class="mb-2">
+                <label for="destination-DataList" class="form-label fw-bold fs-6">Where to?</label>
+                <input class="form-control" list="destination-options" id="destination-DataList" placeholder="Enter your Destination">
+                <datalist id="destination-options">
+                    <option value="Bangalore">
+                    <option value="Delhi">
+                    <option value="Mumbai">
+                    <option value="Hyderabad">
+                    <option value="Kolkata">
+                    <option value="Chennai">
+                    <option value="Goa">
+                    <option value="Ahmedabad">
+                    <option value="Kochi">
+                    <option value="Leh">
+                </datalist>
+            </div>
+            <div class="mb-2">
+                <label for="" class="fw-bold fs-6 mb-2">Departure Date</label>
+                <input type="date" class="form-control">
+            </div>
+            <div><a href="search_details.html" class="btn btn-dark fw-bold btn-md ms-5">Search Flights</a></div>
         </div>
     </div>
     
